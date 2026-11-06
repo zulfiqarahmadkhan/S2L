@@ -1,0 +1,34 @@
+{
+  "s2l_version": "2.1",
+  "date": "2026-11-03 14:56:16",
+  "input_folder": "D:\\LabMemebers\\AftabUmea\\S2L-master\\ExampleDataset",
+  "input_files": 1,
+  "output_folder": "D:\\LabMemebers\\AftabUmea\\S2L-master\\output",
+  "steps": {
+    "segmentation": true,
+    "roi_analysis": true
+  },
+  "engine": "stardist",
+  "device": "GPU",
+  "cellpose": {
+    "model": "cpsam (built-in)",
+    "diameter": 0,
+    "flow_threshold": 0.1,
+    "cellprob_threshold": 0.0,
+    "max_iter": null
+  },
+  "stardist": {
+    "model": "2D_versatile_fluo",
+    "prob_thresh": 0.5,
+    "nms_thresh": 0.4
+  },
+  "channels": {
+    "segment": "all images",
+    "measure": "same image"
+  },
+  "filters": {
+    "min_cell_size_px": 0,
+    "remove_border_cells": false
+  },
+  "skip_existing_masks": false
+}

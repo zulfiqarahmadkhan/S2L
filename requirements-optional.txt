@@ -1,0 +1,7 @@
+# Optional — S2L runs without these; the features that need them say so.
+# StarDist segmentation / training (TensorFlow has no wheels for some systems, e.g. older Intel Macs)
+stardist
+numba>=0.57.0
+tensorflow
+# Cell-ACDC on the Tools page (also installed on first use)
+cellacdc[gui]>=1.8
